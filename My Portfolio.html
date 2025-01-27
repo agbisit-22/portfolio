@@ -1,0 +1,175 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #749c83;
+            color: rgb(250, 243, 243);
+        }
+        .container {
+            display: flex;
+            width: 70%;
+            margin: auto;
+            overflow: hidden;
+            color: white;
+        }
+        .left-container {
+            flex: 1;
+            margin-right: 20px;
+        }
+        .right-container {
+            flex: 2;
+        }
+        header {
+            background-color:  #77837b;
+            color: #c2bcbc;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            padding: 20px 0;
+        } 
+        .nav-links a {
+            text-decoration: none;
+            color: #0e0b0b;
+            text-align: center;
+            display: flex;
+        }
+        header div {
+            color: white;
+            font-size: 1.5em;
+            text-align: center;
+        }
+      
+        section {
+            padding: 30px;
+            background: rgb(61, 59, 59);
+            margin: 20px 0;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+            border: 2px solid white;
+        }
+        section:hover {
+            transform: translateY(-5px);
+        }
+        h2 {
+            color: #fff; 
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+            box-shadow: 0 4px 8px;
+        }
+        .about-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .about-content img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .project-content img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .contact-form button {
+            background: #04961c;
+            color: #fff;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: back-ground 0.3s ease-in-out;
+        }
+        .contact-form button:hover {
+            background: #50f158;
+        }
+        /* Footer*/
+        footer {
+            text-align: center;
+            background: #333;
+            padding: 1px 0;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <ul class="nav-links">
+              <li><a href="#about">About</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header> 
+    <div  class="container">
+        <div class="left-container">
+            <section id="about">
+                <h2>About Me</h2>
+                <div class="about-content">
+                    <img src="me.jpg" alt="Profile Picture">
+                    <p>I'm Jae Ann G. Agbisit 22 years old born on April 22, 2003. </p>
+                    <p>Seeking a position that can provide a steady growth and learning opportunity to practice my profession.</p>
+                </div>
+            </section>
+            <section id="contact">
+                <h2>Contact Me</h2>
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </section>
+        </div>
+        <div class="right-container">
+            <section id="project1">
+                <h2>Project 1</h2>
+                <div class="project-content">
+                    <p>Crud App</p>
+                    <img src="crud app.jpg" alt="Project 1 Image">
+                    
+                </div>
+            </section>
+            <section id="project2">
+                <p>Dashboard</p>
+                <h2>Project 2</h2>
+                <div class="project-content">
+                    <img src="dashboard.jpg" alt="Project 2 Image">
+                </div>
+            </section>
+            <section id="project3">
+                <p>Login Form</p>
+                <h2>Project 3</h2>
+                <div class="project-content">
+                    <img src="Login Form.jpg" alt="Project 2 Image">
+                </div>
+            </section>
+        </div>
+    </div>
+    <footer>
+        <p>&copy;2025 Jae Ann G. Agbisit. All rights reserved.</p>
+    </footer>
+</body>
+</html>
